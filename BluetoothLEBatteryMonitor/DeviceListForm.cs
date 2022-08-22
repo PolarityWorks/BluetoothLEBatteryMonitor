@@ -32,8 +32,8 @@ namespace BluetoothLEBatteryMonitor
             watcher.Stopped += (DeviceWatcher deviceWatcher, object arg) => { deviceWatcher.Start(); };
             watcher.Start();
             int width = DeviceListView.Width / 3;
-            DeviceListView.Columns.Add("设备", width);
-            DeviceListView.Columns.Add("状态", width);
+            DeviceListView.Columns.Add("Device Name", width);
+            DeviceListView.Columns.Add("Status", width);
             DeviceListView.Columns.Add("ID", width);
         }
 
